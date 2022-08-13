@@ -1,0 +1,64 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "certificateExceptions": [],
+  "extensionViews": [],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "Patrick Obermüller",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "http://localhost:4000/config.html",
+    "configurationLocation": "none",
+    "description": "The Charity Royale extension display essential content to simplify the user journey to donate for charity.",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "65diqte1pr6p4kz9vmorlctze363h1",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "Charity Royale",
+    "panelHeight": 300,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "Charity Royale displays essential content to simplify the user journey to donate for charity",
+    "supportEmail": "pat.obermueller@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerSummary": "",
+    "viewerUrl": "http://localhost:4000/panel.html",
+    "viewerUrls": {
+      "mobile": "http://localhost:4000/mobile.html",
+      "panel": "http://localhost:4000/panel.html"
+    },
+    "views": {
+      "mobile": {
+        "viewerUrl": "http://localhost:4000/mobile.html"
+      },
+      "panel": {
+        "viewerUrl": "http://localhost:4000/panel.html",
+        "height": 300,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "http://localhost:4000/config.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "npm run export",
+  "frontendFolderName": "",
+  "name": "Charity Royale",
+  "usingRandomFrontendHostingPort": false,
+  "version": 3
+}
