@@ -8,8 +8,9 @@ const responsiveMaxSizeThreshold = {
 
 export const theme = {
 	color: {
-		primary: 'black',
-		secondary: 'white',
+		primary: '#231565',
+		secondary: '#7df8ff',
+		tertiary: '#ffc439',
 		background: '#c9dded',
 	},
 	fontSize: {

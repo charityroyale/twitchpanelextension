@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 		width: 100%;
 		height: 100%;
 		font-family: 'Roboto', sans-serif;
-		background-color: ${theme.color.background};
+		background-color: ${theme.color.primary};
+		color: ${theme.color.secondary};
 	}
 
 	* {
