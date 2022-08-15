@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Header } from '../components/Header/Header'
-import { Navigation } from '../components/Navigation/Navigation'
+import { Header } from '../Header/Header'
+import { Navigation } from '../Navigation/Navigation'
 
 const StyledGrid = styled.div`
 	display: grid;
@@ -30,7 +30,7 @@ interface MainLayoutProps {
 	main: React.ReactNode
 }
 
-const MainLayout: React.FunctionComponent<MainLayoutProps> = ({ main }: MainLayoutProps) => {
+export const MainLayout: React.FunctionComponent<MainLayoutProps> = ({ main }: MainLayoutProps) => {
 	return <LayoutGrid main={main}></LayoutGrid>
 }
 
@@ -41,11 +41,7 @@ const LayoutGrid: React.FunctionComponent<MainLayoutProps> = ({ main }: MainLayo
 				<Header />
 			</HeaderGridWrapper>
 			<MainGridWrapper>
-				<OverViewContent>
-					<LinkWithButtonStyle href="https://charityroyale.at" target="_blank" rel="noopener">
-						donate
-					</LinkWithButtonStyle>
-				</OverViewContent>
+				<OverViewContent>{main}</OverViewContent>
 			</MainGridWrapper>
 			<NavigationGridWrapper>
 				<Navigation />
@@ -60,14 +56,3 @@ const OverViewContent = styled.div`
 	align-items: center;
 	justify-content: center;
 `
-
-const LinkWithButtonStyle = styled.a`
-	background-color: ${(p) => p.theme.color.tertiary};
-	color: ${(p) => p.theme.color.primary};
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 6px 12px;
-	border-radius: 4px;
-`
-
-export default MainLayout

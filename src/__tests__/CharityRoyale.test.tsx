@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { CharityRoyale } from '../components/CharityRoyale'
+import { CharityRoyale } from '../app/components/CharityRoyale/CharityRoyale'
 
 test('CharityRoyale', () => {
 	render(<CharityRoyale />)

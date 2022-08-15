@@ -1,9 +1,8 @@
 import React from 'react'
 import { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
-import { CharityRoyale } from '../../components/CharityRoyale'
-import PageWithLayoutType from '../../app/layout/PageWithLayout'
-import MainLayout from '../../app/layout/Layout'
+import { CharityRoyale } from '../../app/components/CharityRoyale/CharityRoyale'
+import { MainLayout } from '../../app/components/Layout/Layout'
 
 export interface MobilePageProps {
 	title?: string
@@ -11,15 +10,13 @@ export interface MobilePageProps {
 
 const MobilePage: NextPage<MobilePageProps> = (props: MobilePageProps) => {
 	const { title } = props
+
 	return (
 		<>
 			<Head>
 				<title>{title}</title>
 			</Head>
-			<div>{title}</div>
-			<div>
-				<CharityRoyale />
-			</div>
+			<MainLayout main={<CharityRoyale />}></MainLayout>
 		</>
 	)
 }
@@ -31,6 +28,5 @@ export const getStaticProps: GetStaticProps<MobilePageProps> = async () => {
 		},
 	}
 }
-;(MobilePage as PageWithLayoutType).layout = MainLayout
 
 export default MobilePage
