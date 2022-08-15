@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { CharityRoyale } from '../app/components/CharityRoyale/CharityRoyale'
+import { OverviewContent } from '../app/components/OverviewContent/OverviewContent'
 
-test('CharityRoyale', () => {
-	render(<CharityRoyale />)
+test('OverviewContent', () => {
+	render(<OverviewContent />)
 
 	const charityRoyale = screen.getByText('CharityRoyale')
 	expect(charityRoyale).toBeInTheDocument()

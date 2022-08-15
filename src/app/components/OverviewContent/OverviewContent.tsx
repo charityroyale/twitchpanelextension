@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { OverlayLoader } from '../OverlayLoader/OverlayLoader'
 import { useMakeAWish } from '../../hooks/useMakeAWish'
 
-export const CharityRoyale = () => {
+export const OverviewContent = () => {
 	const { data } = useMakeAWish()
 
 	return (

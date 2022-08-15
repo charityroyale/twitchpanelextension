@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
-import { CharityRoyale } from '../../app/components/CharityRoyale/CharityRoyale'
+import { OverviewContent } from '../../app/components/OverviewContent/OverviewContent'
 import { MainLayout } from '../../app/components/Layout/Layout'
 
 export interface MobilePageProps {
@@ -16,7 +16,7 @@ const MobilePage: NextPage<MobilePageProps> = (props: MobilePageProps) => {
 			<Head>
 				<title>{title}</title>
 			</Head>
-			<MainLayout main={<CharityRoyale />}></MainLayout>
+			<MainLayout main={<OverviewContent />}></MainLayout>
 		</>
 	)
 }
